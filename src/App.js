@@ -67,7 +67,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" style={styles.mainContainer}>
 
         <Header
           currentScore={this.state.currentScore}
@@ -102,6 +102,11 @@ const styles = {
   cardContainer: {
     display: 'flex',
     flexFlow: 'wrap'
+  },
+
+  mainContainer: {
+    width: 808,
+    padding: 45
   }
 }
 
